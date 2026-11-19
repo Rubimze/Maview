@@ -1,0 +1,10 @@
+# Define LF como padrão para todos os arquivos de texto
+* text=auto eol=lf
+
+# Garante que scripts do Windows mantenham CRLF para funcionarem no CMD/PowerShell
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Garante que scripts Linux/Mac e wrappers Maven mantenham LF
+*.sh text eol=lf
+mvnw text eol=lf
